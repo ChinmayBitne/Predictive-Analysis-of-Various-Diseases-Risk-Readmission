@@ -43,6 +43,15 @@ def Liver():
 def kidney():
     return render_template('kidney.html')
 
+@app.route('/About')
+def About():
+    return render_template('about-us.html')
+
+@app.route('/ContactUs')
+def Contact():
+    return render_template('contact.html')
+
+
 
 
 @app.route('/predictheart', methods=['POST', 'GET'])
