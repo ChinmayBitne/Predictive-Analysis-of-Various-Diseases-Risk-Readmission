@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthnators</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Healthnators</h2>
+        <nav class="navigation">
+            <a class="vc" href="/">Home</a>
+            <a class="vc"href="/About">About</a>
+            <a class="vc"href="/ContactUs">Contact Us</a>
+            <a class="vc"href="/login">Login</a>
+            <!-- <a href="login.html"><button  class="btnLogin-popup">LogOut</button></a> -->
+        </nav>
+        
+    </header>
+    <div class="wrapper">
+        <div  style="height: 100%" class="center-align">
+            <a href="/Heart" class="A"><span >Heart Disease</span></a>
+            <a href="/Diabetes" class="A"><span >Diabetes</span></a>
+            <a href="/Breast_Cancer" class="A"><span >Breast Cancer</span></a>
+            <a href="/Kidney" class="A"><span >Kidney</span></a>
+            <a href="/Liver" class="A"><span >Liver</span></a>
+        </div>
+    </div>
+</body>
+</html>

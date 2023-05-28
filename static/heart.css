@@ -1,0 +1,98 @@
+body.h1.ul.li{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('heart.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section{
+    width: 85%;
+    margin: 50px auto;
+}
+section h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px rgba(0, 0,0, 0.5);
+    color: white;
+    font-size: 2em;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.57);
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding: 25px;
+    min-height: 100vh;
+   /* background: linear-gradient(90deg, #2ecc71 60%, #27ae60 40.1%);*/ 
+}
+
+.container form .inputBox{
+    margin-bottom: 10px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+.container form .inputBox input{
+    width: 150%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none; 
+}
+.container form .inputBox input :focus{
+    border: 1px solid #000;
+
+}
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.container form .row .col{
+    flex: 1 1 250px;
+}
+.container form .row .col .inputBox{
+    margin: 40px 0;
+    color: white;
+}
+.container form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+}
+.container form .row .col .inputBox input{
+    width: 150%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none; 
+}
+.container form .row .col .inputBox input:focus{
+    border: 1px solid #000;
+}
+.container form .submit-btn{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #27ae60;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.container form .submit-btn:hover{
+    background: #27ae60;
+}
