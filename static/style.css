@@ -1,0 +1,143 @@
+/* Custom CSS for a more attractive design */
+
+/* Body and General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styling */
+.header-area {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.top-header-area {
+    background-color: #efefef;
+    padding: 8px 0;
+}
+
+.top-header-area p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.main-header-area {
+    padding: 1px 0;
+}
+
+.main-header-area .navbar-brand {
+    font-size: 36px;
+    font-weight: bold;
+    color: #3a7bd5;
+    text-align: center;
+}
+
+.navbar-brand:hover{
+    color: cornflowerblue;
+}
+
+/* Tag Styling */
+.Tag-area {
+    background-color: #3a7bd5;
+}
+
+.Tag-area .Tag-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* About Us Section Styling */
+.about-us-area {
+    padding: 20px 0;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    width: -50%;
+    color: #333;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+.about-content p {
+    font-size: 20px;
+    text-align: justify;
+    width: -50%;
+    padding-right: 10px;
+    line-height: 2;
+    align-content: stretch;
+}
+
+.about-image img {
+    max-width: 30%;
+    height: auto;
+    float: left;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+/* Footer Styling */
+.footer-area {
+    background-color: #3a7bd5;
+    color: #ffffff;
+    padding: 50px 0;
+    margin-top: auto;
+}
+
+.footer-area p {
+    margin: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+    .main-header-area .navbar-brand {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Tag-area {
+        padding: 20px 0;
+    }
+
+    .Tag-area .Tag-title {
+        font-size: 36px;
+    }
+
+    .about-us-area {
+        padding: 20px 0;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+        align-content: stretch;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-content h2 {
+        font-size: 15px;
+    }
+
+    .about-content p {
+        font-size: 10px;
+    }
+}
