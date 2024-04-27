@@ -14,40 +14,44 @@ model3 = pickle.load(open('Models/liver.pkl', 'rb'))
 model4 = pickle.load(open('Models/kidney.pkl', 'rb'))
 
 
-
 @app.route('/')
 def home():
     return render_template('home.html')
+
 
 @app.route('/Heart')
 def heart():
     return render_template('heart.html')
 
+
 @app.route('/Diabetes')
 def diabetes():
     return render_template('diabetes.html')
+
 
 @app.route('/Breast_Cancer')
 def breast_cancer():
     return render_template('breast_cancer.html')
 
+
 @app.route('/Liver')
 def Liver():
     return render_template('liver.html')
+
 
 @app.route('/Kidney')
 def kidney():
     return render_template('kidney.html')
 
+
 @app.route('/About')
 def About():
     return render_template('about-us.html')
 
+
 @app.route('/ContactUs')
 def Contact():
     return render_template('contact.html')
-
-
 
 
 @app.route('/predictheart', methods=['POST', 'GET'])
@@ -90,6 +94,7 @@ def predictd():
 
     return render_template('diabetes.html', prediction_text='Patient has {}'.format(res))
 
+
 @app.route('/predict_breastcancer', methods=['POST', 'GET'])
 def predictbc():
     input_features = [float(x) for x in request.form.values()]
@@ -113,9 +118,9 @@ def predictl():
     input_features = [float(x) for x in request.form.values()]
     features_value = [np.array(input_features)]
 
-    features_name = ["Age", "Gender", "Total_Bilirubin", "Direct_Bilirubin", "Alkaline_Phosphotase", 
-                    "Alamine_Aminotransferase", "Aspartate_Aminotransferase", "Total_Protiens", 
-                    "Albumin", "Albumin_and_Globulin_Ratio"]
+    features_name = ["Age", "Gender", "Total_Bilirubin", "Direct_Bilirubin", "Alkaline_Phosphotase",
+                     "Alamine_Aminotransferase", "Aspartate_Aminotransferase", "Total_Protiens",
+                     "Albumin", "Albumin_and_Globulin_Ratio"]
 
     data2 = pd.DataFrame(features_value, columns=features_name)
     my_prediction2 = model3.predict(data2)
@@ -134,7 +139,7 @@ def predictk():
     features_value = [np.array(input_features)]
 
     features_name = ['age', 'bp', 'al', 'su', 'rbc', 'pc', 'pcc', 'ba', 'bgr', 'bu', 'sc',
-                        'pot', 'wc', 'htn', 'dm', 'cad', 'pe', 'ane']
+                     'pot', 'wc', 'htn', 'dm', 'cad', 'pe', 'ane']
 
     data3 = pd.DataFrame(features_value, columns=features_name)
     my_prediction3 = model4.predict(data3)
