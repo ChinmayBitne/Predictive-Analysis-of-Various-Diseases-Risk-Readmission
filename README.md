@@ -1,36 +1,74 @@
-# Predictive-Analysis-of-Various-Diseases-Risk-Readmission
+# :microscope: Predictive Analysis of Various Diseases Risk Readmission :hospital:
 
-The problem and its relevance to today's market / society / industry need:
-Many government and non-government hospitals struggle with the same issue of looking through each and every patient report to check for readmissions or diseases with a high probability of recurrence. This is a laborious and time-consuming operation. 
+![Python](https://img.shields.io/badge/Python-grey.svg?style=flat&logo=python)
+![Flask](https://img.shields.io/badge/Flask-blue.svg?style=flat&logo=flask)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-gren.svg?style=flat)
+![Data Science](https://img.shields.io/badge/Data%20Science-darkorange.svg?style=flat)
+
+This project is a comprehensive Flask application designed to predict the risk of various diseases, including heart disease, diabetes, breast cancer, liver disease, and kidney disease, using machine learning models. Powered by Python and Flask, the application provides a user-friendly web interface for easy interaction with the predictive models.
+
+## ⚙️ Technologies Used
+- **Python:** Primary programming language used.
+
+- **Flask:** Web framework for the application.
+
+- **Random Forest Algorithm:** Machine learning algorithm for predictions.
+
+- **Pickle:** For saving and loading machine learning models.
+
+## ⭐: Features
+
+- **Multi-Disease Prediction:** Predict the risk for multiple diseases including:
+  - Heart Disease
+  - Diabetes
+  - Breast Cancer
+  - Liver Disease
+  - Kidney Disease
+- **User-Friendly Interface:** Easy to navigate web interface built with Flask.
+- **Accuracy:** Utilizes Random Forest algorithm for high prediction accuracy.
+- **Data Analysis:** Comprehensive data analysis and model training documentation.
+
+## 🔧: Installation
+
+To set up the project environment, follow these steps:
+
+**1. Clone the repository**
+
+    git clone https://github.com/ChinmayBitne/Predictive-Analysis-of-Various-Diseases-Risk-Readmission.git
+
+    cd Predictive-Analysis-of-Various-Diseases-Risk-Readmission
+
+**2. Set Up Environment (Optional)**
+    
+    python -m venv venv
+    
+**3. Activate Enviroment (Optional)**
+
+    venv\Scripts\activate
+    
+### Install the requirements 🗃️
+
+    pip install -r requirements.txt
+    
+**Run the application**
+
+    python main.py
+    
+_The application should now be running on http://localhost:5000._
 
 
+## 📐: How It Works
 
-The Solution / Proposed / Developed:
-We created a technology called Predictive analysis of various diseases risk readmission to address the problem. In this system, we authorise the administrator to log in and enter the various data variable values, on the basis of which the model will forecast the patient's high risk of readmission. The generation of reports for verificational purposes will come last.
+- **Data Analysis & Model Training:** Our models are trained using the Random Forest algorithm, selected for its high accuracy. The training process involves extensive data analysis, ensuring reliable predictions.
+- **Flask Application:** The web interface is built with Flask, providing a seamless experience for users to input their data and receive disease risk predictions.
+- **Machine Learning Models:** Models are saved as pickle files and integrated into the Flask application for real-time predictions.
 
+## 📁: Project Structure
 
-The uniqueness and distinctive features of the (product / process / service) solution:
-Predictive analysis of disease risk readmission systems involves analyzing patient data to identify patterns and predict the likelihood of a patient being readmitted to the hospital.
-Some of the unique and distinctive features of predictive analysis of disease risk readmission systems include:
-1.Use of advanced analytics
-2.Integration of multiple data sources
-3.Real-time monitoring
-4.Cost-effective: Predictive analysis systems can help healthcare providers save money by reducing readmissions and avoiding unnecessary hospital stays. 
-Overall, our system can help to identify patients at high risk of readmission and improve patient outcomes while also reducing healthcare costs.
-
-
-How the solution is different from similar kind of product by the competitors if any:
-It utilizes advanced machine learning algorithms to accurately identify key risk factors for readmissions, provides personalized risk scores for individual patients, integrates with existing electronic health record systems, and is highly customizable. These features give healthcare providers a competitive advantage in preventing readmissions and improving patient outcomes.
-
-
-Utility: Highlight the utility/value proposition (key benefits) aspects of the solution/innovation:
-The Predictive Analysis of various diseases risk readmission system has significant market potential due to the growing demand for innovative healthcare solutions that can improve patient outcomes and reduce the cost of care. The system can be segmented into different categories and specialties, allowing healthcare providers to tailor the solution to their specific needs. The target users/customers include healthcare providers, patients, and healthcare payers, making the Predictive Analysis system a valuable tool for the entire healthcare ecosystem.
-
-
-Economic Sustainability:  commercialisation/business application aspects of the solution:
-Although the Predictive Analysis of various diseases risk readmission system does not have a direct impact on the environment, it can indirectly promote environmental friendliness by reducing resource utilization, enabling remote monitoring, promoting paperless operations, and building healthier communities. These benefits can be further amplified by incorporating sustainability considerations into the system's design and operations. Overall, the solution can contribute to a healthier and more sustainable healthcare system, which can have a positive impact on the environment and the well-being of communities.
-
-
-
-
-#Healthnators
+- [main.py](main.py): Flask application entry point.
+- [Models](Models): Directory containing the trained models as pickle files.
+- [templates](templates): HTML templates for the web interface.
+- [static](static): CSS/JS and other static files for the web interface.
+- [Analyzing-Data](Anazyzing_Data.ipynb) & [Model-Training](Model_Training.ipynb): Jupyter notebooks for data analysis and model training.
+- [Heart Disease Dataset EDA](Heart_EDA.html): Exploratory data analysis report for heart disease dataset
+- [Dataset](Dataset): Contains the datasets used for training
