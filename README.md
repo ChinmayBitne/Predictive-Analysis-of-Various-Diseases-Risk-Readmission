@@ -71,4 +71,4 @@ _The application should now be running on http://localhost:5000._
 - [static](static): CSS/JS and other static files for the web interface.
 - [Analyzing-Data](Anazyzing_Data.ipynb) & [Model-Training](Model_Training.ipynb): Jupyter notebooks for data analysis and model training.
 - [Heart Disease Dataset EDA](Heart_EDA.html): Exploratory data analysis report for heart disease dataset
-- [Dataset](Dataset): Contains the datasets used for training
+- [Datasets](Datasets): Contains the datasets used for training
